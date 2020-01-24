@@ -1,0 +1,6 @@
+<!-- 
+    商品価格が700ドル以上の場合に表示される"Notify Me"ボタンでプレースホルダーの段落を置き換えます。
+ -->
+<p *ngIf="product.price > 700">
+    <button (click)="notify.emit()">Notify Me</button>
+</p>

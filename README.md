@@ -25,3 +25,30 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+```bash
+ng serve
+ng new my-first-project
+
+Angular_tutorial on  master [!] is 📦 v0.0.0 via ⬢ v12.12.0
+❯ ng generate component --dryRun=true --skipSelector=true
+? What name would you like to use for the component? product-alerts
+CREATE src/app/product-alerts/product-alerts.component.css (0 bytes)
+CREATE src/app/product-alerts/product-alerts.component.html (29 bytes)
+CREATE src/app/product-alerts/product-alerts.component.spec.ts (678 bytes)
+CREATE src/app/product-alerts/product-alerts.component.ts (266 bytes)
+UPDATE src/app/app.module.ts (1023 bytes)
+
+NOTE: The "dryRun" flag means no changes were made.
+
+Angular_tutorial on  master [!] is 📦 v0.0.0 via ⬢ v12.12.0 took 19s
+❯ ng generate component --skipSelector=true
+? What name would you like to use for the component? product-alerts
+CREATE src/app/product-alerts/product-alerts.component.css (0 bytes)
+CREATE src/app/product-alerts/product-alerts.component.html (29 bytes)
+CREATE src/app/product-alerts/product-alerts.component.spec.ts (678 bytes)
+CREATE src/app/product-alerts/product-alerts.component.ts (266 bytes)
+UPDATE src/app/app.module.ts (1023 bytes)
+
+
+```
