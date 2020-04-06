@@ -1,26 +1,26 @@
 <h2>Products</h2>
 
-<div *ngFor="let product of products">
+<div *ngFor="let product of products; index as productId">
 
-    <h3>
-        <a [title]="product.name + ' details'">
-            {{ product.name }}
-        </a>
-    </h3>
+	<h3>
+		<a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
+		{{ product.name }}
+		</a>
+	</h3>
 
-    <p *ngIf="product.description">
-        Description: {{ product.description }}
-    </p>
+	<p *ngIf="product.description">
+		Description: {{ product.description }}
+	</p>
 
-    <p *ngIf="product.maker">
-        Maker: {{ product.maker }}
-    </p>
+	<p *ngIf="product.maker">
+		Maker: {{ product.maker }}
+	</p>
 
-    <button (click)="share()">
-        Share
-    </button>
+	<button (click)="share()">
+		Share
+	</button>
 
-    <!-- selector name を app-product-alerts として定義したものにproductを渡す？ -->
-    <app-product-alerts [product]="product" (notify)="onNotify()"></app-product-alerts>
+	<!-- selector name を app-product-alerts として定義したものにproductを渡す？ -->
+	<app-product-alerts [product]="product" (notify)="onNotify1()"></app-product-alerts>
 
 </div>
