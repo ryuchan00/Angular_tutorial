@@ -12,5 +12,11 @@ ng serve --open
 
 # product-detailsコンポーネントファイル群を作成する
 ng generate component product-details
+# cartサービスを作成する
+ng generate service cart
+# cartコンポーネントを作成する
+ng generate component cart
+# shippingコンポーネントを作成する
+ng generate component shipping
 
 ```
